@@ -1,0 +1,30 @@
+[project]
+name = "langgraph-support-agent"
+version = "0.1.0"
+description = "Graph-based customer support agent with Lang Graph orchestration and MCP client routing."
+authors = [
+    { name = "Anurag Mishra", email = "anuragmishra02@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.poetry.dependencies]  # if using Poetry
+python = ">=3.10,<3.13"
+pydantic = "^2.8"
+pyyaml = "^6.0"
+networkx = "^3.3"
+rich = "^13.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+ruff = "^0.6.9"
+black = "^24.4"
+pre-commit = "^3.8"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# ✅ Tell setuptools where to find your code
+[tool.setuptools.packages.find]
+where = ["src"]

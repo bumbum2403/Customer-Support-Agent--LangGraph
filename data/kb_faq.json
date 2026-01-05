@@ -1,0 +1,102 @@
+[
+  {
+    "id": "faq_001",
+    "question": "How do I track my order?",
+    "answer": "You can track your order by visiting the Orders section in your account or contacting support with your order ID."
+  },
+  {
+    "id": "faq_002",
+    "question": "What should I do if my order is delayed?",
+    "answer": "If your order is delayed, please allow 24–48 hours. If it still hasn’t arrived, contact our support team with your order number."
+  },
+  {
+    "id": "faq_003",
+    "question": "How do I return a product?",
+    "answer": "To return a product, go to your Orders page, select the item, and follow the return instructions."
+  },
+  {
+    "id": "faq_004",
+    "question": "Can I cancel my order after placing it?",
+    "answer": "Yes, you can cancel your order within 1 hour of placing it by going to your Orders page or contacting support."
+  },
+  {
+    "id": "faq_005",
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we offer international shipping. Shipping fees and times vary by country."
+  },
+  {
+    "id": "faq_006",
+    "question": "What payment methods do you accept?",
+    "answer": "We accept credit/debit cards, PayPal, and other local payment options depending on your region."
+  },
+  {
+    "id": "faq_007",
+    "question": "How do I change my shipping address?",
+    "answer": "You can update your shipping address in your account settings before the order is shipped."
+  },
+  {
+    "id": "faq_008",
+    "question": "What is your refund policy?",
+    "answer": "Refunds are processed within 7 days after receiving the returned product in our warehouse."
+  },
+  {
+    "id": "faq_009",
+    "question": "How do I apply a discount code?",
+    "answer": "You can apply the discount code at checkout in the 'Promo Code' field."
+  },
+  {
+    "id": "faq_010",
+    "question": "Do you offer gift wrapping?",
+    "answer": "Yes, gift wrapping is available at checkout for an additional fee."
+  },
+  {
+    "id": "faq_011",
+    "question": "How do I contact customer support?",
+    "answer": "You can contact support via email, live chat, or phone. All details are in the Contact Us section."
+  },
+  {
+    "id": "faq_012",
+    "question": "Can I exchange a product?",
+    "answer": "Yes, you can exchange a product within 14 days of delivery, subject to product condition."
+  },
+  {
+    "id": "faq_013",
+    "question": "How long does shipping take?",
+    "answer": "Standard shipping takes 3–5 business days, while express shipping takes 1–2 business days."
+  },
+  {
+    "id": "faq_014",
+    "question": "What should I do if I received a damaged product?",
+    "answer": "Contact our support immediately with photos of the damaged product, and we will guide you through the replacement process."
+  },
+  {
+    "id": "faq_015",
+    "question": "Do you have a loyalty program?",
+    "answer": "Yes, our loyalty program gives points on every purchase which can be redeemed for discounts."
+  },
+  {
+    "id": "faq_016",
+    "question": "Can I pre-order products?",
+    "answer": "Yes, select items available for pre-order will indicate this on the product page."
+  },
+  {
+    "id": "faq_017",
+    "question": "How do I reset my account password?",
+    "answer": "Click 'Forgot Password' on the login page and follow the instructions to reset your password."
+  },
+  {
+    "id": "faq_018",
+    "question": "What are your business hours?",
+    "answer": "Our customer support is available Monday to Friday, 9 AM to 6 PM local time."
+  },
+  {
+    "id": "faq_019",
+    "question": "Can I track my return or refund?",
+    "answer": "Yes, you can track the status of your return and refund in your account under Orders."
+  },
+  {
+    "id": "faq_020",
+    "question": "Do you provide invoice or billing information?",
+    "answer": "Yes, invoices can be downloaded from your account or requested via support."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "customer_name": "Alice",
+  "email": "alice@example.com",
+  "query": "My phone order #123 hasn’t arrived yet, it was supposed to come yesterday.",
+  "priority": "High",
+  "ticket_id": "TKT-5678",
+  "order_id": "123",
+  "intent": "track_order",
+  "channel": "email",
+  "conversation_id": "conv-001",
+  "metadata": {
+    "language": "en",
+    "product": "smartphone",
+    "customer_type": "retail"
+  }
+}

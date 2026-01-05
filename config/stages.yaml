@@ -1,0 +1,79 @@
+# Defines the workflow stages and abilities for LangGraphAgent
+# Deterministic = executes sequentially
+# Non-deterministic = evaluates multiple abilities, picks best outcome
+
+stages:
+  - name: INTAKE
+    mode: deterministic
+    description: "Accept raw payload from external systems or user input."
+    abilities:
+      - { name: accept_payload, server: COMMON }
+
+  - name: UNDERSTAND
+    mode: deterministic
+    description: "Parse request text and extract relevant entities."
+    abilities:
+      - { name: parse_request_text, server: COMMON }
+      - { name: extract_entities,   server: ATLAS }
+
+  - name: PREPARE
+    mode: deterministic
+    description: "Normalize, enrich, and pre-process the request payload."
+    abilities:
+      - { name: normalize_fields,       server: COMMON }
+      - { name: enrich_records,         server: ATLAS }
+      - { name: add_flags_calculations, server: COMMON }
+
+  - name: ASK
+    mode: deterministic
+    description: "Proactively ask clarifying questions from customer."
+    abilities:
+      - { name: clarify_question, server: ATLAS }
+
+  - name: WAIT
+    mode: deterministic
+    description: "Hold state while waiting for customer input."
+    abilities:
+      - { name: extract_answer, server: ATLAS }
+      - { name: store_answer,   server: ATLAS }
+
+  - name: RETRIEVE
+    mode: deterministic
+    description: "Fetch relevant information from knowledge base or history."
+    abilities:
+      - { name: knowledge_base_search, server: ATLAS }
+      - { name: store_data,            server: COMMON }
+
+  - name: DECIDE
+    mode: non-deterministic
+    description: "Decide best course of action - resolve, escalate, or update payload."
+    abilities:
+      - { name: solution_evaluation, server: COMMON }
+      - { name: escalation_decision, server: ATLAS }
+      - { name: update_payload,      server: COMMON }
+
+  - name: UPDATE
+    mode: deterministic
+    description: "Update internal systems with ticket state changes."
+    abilities:
+      - { name: update_ticket, server: ATLAS }
+      - { name: close_ticket,  server: ATLAS }
+
+  - name: CREATE
+    mode: deterministic
+    description: "Generate structured response text for customer."
+    abilities:
+      - { name: response_generation, server: COMMON }
+
+  - name: DO
+    mode: deterministic
+    description: "Execute final actions such as API calls or notifications."
+    abilities:
+      - { name: execute_api_calls,     server: ATLAS }
+      - { name: trigger_notifications, server: ATLAS }
+
+  - name: COMPLETE
+    mode: deterministic
+    description: "Finalize and output the enriched payload."
+    abilities:
+      - { name: output_payload, server: COMMON }

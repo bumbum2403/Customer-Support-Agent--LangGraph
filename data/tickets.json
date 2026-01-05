@@ -1,0 +1,48 @@
+[
+    {
+        "ticket_id": "TKT-001",
+        "customer_name": "anurag",
+        "email": "anu@rag.com",
+        "query": "I haven't received my product",
+        "response": "To return a product, go to your Orders page, select the item, and follow the return instructions.",
+        "alternatives": [
+            {
+                "answer": "To return a product, go to your Orders page, select the item, and follow the return instructions.",
+                "score": -0.12913739681243896
+            },
+            {
+                "answer": "If your order is delayed, please allow 24\u201348 hours. If it still hasn\u2019t arrived, contact our support team with your order number.",
+                "score": -0.30837011337280273
+            },
+            {
+                "answer": "Yes, you can exchange a product within 14 days of delivery, subject to product condition.",
+                "score": -0.3207751512527466
+            }
+        ],
+        "status": "pending",
+        "timestamp": "2025-08-28T15:05:42.042929"
+    },
+    {
+        "ticket_id": "TKT-002",
+        "customer_name": "anurag",
+        "email": "anurag@email.com",
+        "query": "can I get this product gift wrapped?",
+        "response": "Yes, gift wrapping is available at checkout for an additional fee.",
+        "alternatives": [
+            {
+                "answer": "Yes, gift wrapping is available at checkout for an additional fee.",
+                "score": 0.7151097655296326
+            },
+            {
+                "answer": "Yes, you can exchange a product within 14 days of delivery, subject to product condition.",
+                "score": 1.267350673675537
+            },
+            {
+                "answer": "To return a product, go to your Orders page, select the item, and follow the return instructions.",
+                "score": 1.5086829662322998
+            }
+        ],
+        "status": "resolved",
+        "timestamp": "2025-08-28T19:38:43.013214"
+    }
+]
